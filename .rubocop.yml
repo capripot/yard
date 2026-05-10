@@ -1,6 +1,10 @@
 #inherit_from:
 #  - .rubocop_todo.yml
 
+AllCops:
+  NewCops: disable
+  SuggestExtensions: false
+
 Metrics:
   Enabled: false
 Layout/LineLength:
@@ -40,9 +44,9 @@ Naming/VariableNumber:
   Enabled: false
 Naming/AccessorMethodName: # this creates breaking changes in the API
   Enabled: false
-Naming/PredicateName: # this creates breaking changes in the API
+Naming/PredicatePrefix: # this creates breaking changes in the API
   Enabled: false
-Style/MethodMissingSuper: # this doesn't exist in 1.8/1.9
+Lint/MissingSuper: # this doesn't exist in 1.8/1.9
   Enabled: false
 Style/MissingRespondToMissing: # this doesn't exist in 1.8/1.9
   Enabled: false
